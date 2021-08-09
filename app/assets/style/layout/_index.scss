@@ -1,0 +1,46 @@
+.main{
+    width: 77%;
+    margin-left: 23%;
+}
+
+.nav-top h2{
+    margin-right: 47px;
+}
+
+.table{
+    margin-bottom: 63px;
+}
+
+.admin-photo{
+    width: 141px;
+    height: 141px;
+    object-fit: cover;
+}
+
+.page-link.active{
+    background-color: $success;
+    color: $white;
+}
+.direction{
+    color: $success;
+}
+
+.admin-info{
+    width: 70%;
+}
+
+// ----預設箭頭的呈現方式----
+.expand_more {
+    display: none;
+}
+.expand_less {
+    display: inline-block;
+}
+// ----BS5 設計在收合時，button 的 class 會新增 .collapsed，因此用這個 class 來設計收合時箭頭的呈現方式
+.collapsed .expand_more {
+    display: inline-block;
+}
+.collapsed .expand_less {
+    display: none;
+}
+  

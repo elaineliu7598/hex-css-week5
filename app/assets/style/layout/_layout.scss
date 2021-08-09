@@ -1,0 +1,41 @@
+.aside-nav{
+    position: fixed;
+    min-width: 23%;
+    min-height: 100vh;
+    h1 a{
+        display: block;
+        width: 151px;
+        height: 40px;
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/logo-ANSWER.svg);
+        text-indent: 101%;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}
+
+.rounded-photo{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+header{
+    position: relative;
+}
+.nav-link:hover{
+    color: $success;
+}
+.aside-nav .nav-link:hover:before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    width: 4px;
+    height: 30px;
+    border-left: 4px solid $success;
+}
+
+.nav-item{
+    margin-bottom: 10px;
+}
+
+

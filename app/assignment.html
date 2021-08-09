@@ -1,0 +1,127 @@
+---
+title: Assignment
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<div class="main p-6">
+    <!-- --------------1.上方選單-------------- -->
+    <div class="nav-top d-flex justify-content-between align-items-center pb-6">
+      <!-- --------------1-1.左邊：admin 區塊-------------- -->
+      <div class="d-flex align-items-center">
+        <h2 class="fs-4 fw-bold">Assignment</h2>
+        <a href="#" class="d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#addNew">
+            All Courses
+            <span class="material-icons text-success">expand_more</span></a>
+      </div>
+      <!-- --------------1-2.右邊：放大鏡、通知 icon-------------- -->
+      <div>
+        <a href="#"><span class="material-icons me-4">search</span></a>
+        <a href="#"><span class="material-icons">notifications_active</span></a>
+      </div>
+    </div>
+    <!-- --------------2.中間區塊-------------- -->
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <h3 class="h6 d-flex align-items-center">All (4) 
+                <span class="material-icons text-success">expand_more</span>
+            </h3>
+            <small class="text-small text-secondary">2 comments</small>
+        </div>
+        <div class="row">
+            <div class="col-md-5">
+                <div class="list-group">
+                    <a href="#" class="list-group-item bg-light">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="text-small fw-normal mb-1">Chapter Assignment 2</h5>
+                            <small class="text-small">4 hrs ago</small>
+                        </div>
+                        <div class="d-flex w-100 justify-content-between">
+                            <h4 class="h6 fw-bold mb-1">Please check this file…</h4>
+                            <small class="text-small text-secondary">Emily Wang</small>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="text-small fw-normal mb-1">Chapter Assignment 1</h5>
+                          <small class="text-small">12 hrs ago</small>
+                        </div>
+                        <div class="d-flex w-100 justify-content-between">
+                          <h4 class="h6 fw-bold mb-1">My Homework</h4>
+                          <small class="text-small text-secondary">David Xu</small>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="text-small fw-normal mb-1">Final Assignment</h5>
+                          <small class="text-small">18 hrs ago</small>
+                        </div>
+                        <div class="d-flex w-100 justify-content-between">
+                          <h4 class="h6 fw-bold mb-1">Have a problem with this…</h4>
+                          <small class="text-small text-secondary">Tony Wei</small>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="text-small fw-normal mb-1">Final Assignment</h5>
+                          <small class="text-small">19 hrs ago</small>
+                        </div>
+                        <div class="d-flex w-100 justify-content-between">
+                          <h4 class="h6 fw-bold mb-1">Did I do it right?</h4>
+                          <small class="text-small text-secondary">Christina Lin</small>
+                        </div>
+                    </a>
+                  </div>
+            </div>
+            <div class="col-md-7">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="text-small fw-normal mt-1 mb-1">Chapter Assignment 2 / HTML&CSS</h5>
+                            <h4 class="h6 fw-bold mb-1">Please check this file for me, thanks!</h4>
+                        </div>
+                        <a href="#"><span class="material-icons">more_vert</span></a>
+                    </div>
+                    <div class="card-body d-flex pb-0">
+                        <div><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/emilywang.jpeg" alt="emilywang" class="rounded-circle rounded-photo"></div>
+                        <div class="border-bottom ms-2 pb-3">
+                            <h5 class="h6 mb-0">Emily Wang</h5>
+                            <small class="text-small text-secondary">10:38 AM (4 hours ago)</small>
+                            <p class="fs-sm mt-3">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <span class="bg-light text-success">div</span> is bigger than the height of the <span class="bg-light text-success">img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?</p>
+                            <button type="button" class="btn btn-light d-flex align-items-center border-dark">
+                                <span class="material-icons">attach_file</span>HW-2-David.zip
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body d-flex">
+                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/andychen.jpeg" class="rounded-circle rounded-photo" alt="Andy Chen photo">
+                        <div class="ms-2">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h5 class="h6 mb-0">Andy Chen (You)</h5>
+                                    <small class="text-small text-secondary">13:24 AM (1 hours ago)</small>
+                                </div>
+                                <div>
+                                    <a href="#"><span class="material-icons me-4">star_outline</span></a>
+                                    <a href="#"><span class="material-icons">edit</span></a>
+                                </div>
+                            </div>
+                            <p class="fs-sm mt-3">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. <br><br> You can: <br><br>　• adjust the <span class="bg-light text-success">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="bg-light text-success">middle</span> ) or <br>　• change the <span class="bg-light text-success">display</span> so it isn’t inline.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between mt-3">
+                    <div>
+                        <a href="#"><span class="material-icons me-4">chevron_left</span></a>
+                        <a href="#"><span class="material-icons">chevron_right</span></a>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-outline-success me-3 pt-2 pb-2 ps-6 pe-6">Mark as read</button>
+                        <a href="./assignment-reply.html" class="btn btn-success pt-2 pb-2 ps-6 pe-6">Reply</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
